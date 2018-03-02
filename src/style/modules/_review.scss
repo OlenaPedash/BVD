@@ -1,0 +1,83 @@
+.review {
+  background: no-repeat url('../img/review_bg.jpg'), -webkit-radial-gradient(circle cover, rgba(52, 2, 46, .41), rgba(52, 2, 46, .01));
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  min-width: 30rem;
+  max-height: 78.7rem;
+  text-align: left;
+  &_container {
+    @include display-flex (column,
+            flex-end,
+            center);
+    padding-top: 15.5rem;
+    color: $lightColor;
+    font-size: 3rem;
+    line-height: 3.8rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    text-align: left;
+    @media (max-width: 1300px) {
+      padding-top: 10rem;
+      font-size: 2rem;
+      font-weight: 400;
+    }
+    @media (max-width: 1050px) {
+      padding: 2rem 1.5rem;
+    }
+    @media (max-width: 680px) {
+      padding-top: 1.5rem;
+      font-size: 2rem;
+      line-height: 1.5;
+      font-weight: 400;
+    }
+    @media (max-width: 680px) {
+      font-size: 1.5rem;
+    }
+  }
+  .icon-star {
+    fill: $accent;
+    width: 3.3rem;
+    height: 3.2rem;
+    margin-right: 1.5rem;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &_text {
+    width: 100%;
+    max-width: 116rem;
+    padding-top: 7.5rem;
+    padding-bottom: 3rem;
+    @media (max-width: 1200px) {
+      padding: 2rem 10rem;
+    }
+    @media (max-width: 1050px) {
+      padding: 2rem 5rem;
+    }
+  }
+  &_signature {
+    @include display-flex (row,
+            flex-end,
+            center);
+    width: 100%;
+    max-width: 116rem;
+    text-align: right;
+  }
+  &_sign-wrapp {
+    @include display-flex (row,
+            center,
+            center);
+  }
+  &_text__sign {
+    padding-top: 0;
+    padding-bottom: 0px;
+    padding-left: 2.3rem;
+    @media (max-width: 36rem) {
+      font-size: 1.2rem;
+    }
+
+  }
+
+}

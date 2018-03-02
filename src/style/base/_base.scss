@@ -1,0 +1,74 @@
+html {
+  font-size: 10px;
+}
+body {
+  font: 300 1.8rem/1 Roboto, sans-serif;
+  color:  $mainColor;
+  text-align: center;
+  letter-spacing: .01em;
+}
+
+input {
+  outline: none;
+  border: none;
+  &:focus {
+    color: $headerAccent;
+  }
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: $accent;
+  width: 30rem;
+  height: 4.2rem;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: $lightColor;
+  cursor: pointer;
+  @include transition(0.4s);
+  &:active,
+  &:hover, {
+    text-decoration: none;
+  }
+}
+
+img {
+  display: block;
+}
+
+.clearfix {
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 128rem;
+  margin: 0 auto;
+}
+
+h1 {
+  font: 700 3.8rem/4.2rem 'Open Sans', sans-serif;
+  color: $headerFont;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 6rem;
+  text-transform: uppercase;
+  @media (max-width: 89.5rem) {
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+}

@@ -1,0 +1,26 @@
+.services {
+  background: $bgColor;
+  padding-top: 7rem;
+  min-width: 30rem;
+  &_wrapper {
+    @include display-flex (row,
+            space-between,
+            flex-start);
+  }
+  &_item {
+    @include display-flex (row,
+            flex-start,
+            flex-start);
+    max-width: 77.5rem;
+    flex-wrap: wrap;
+    max-height: 51.2rem;
+
+  }
+  &_text {
+
+  }
+}
+.button_accent {
+  background-color: $headerAccent;
+  color: $lightColor;
+}

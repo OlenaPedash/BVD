@@ -1,0 +1,40 @@
+//HEADER
+.header#header
+    .container.header_container
+        .header_wrapper
+            .logo
+               img(src='./img/bvdlogo1.png' alt='logo')
+            p.header_text.
+                До конца конкурса осталось
+            .header_timer
+                .header_time-wrap
+                    .header_time.days
+                    p.header_text.
+                        дней
+                .header_time-wrap
+                    .header_time.hours
+                    p.header_text.
+                        часов
+                .header_time-wrap
+                    .header_time.minutes
+                    p.header_text.
+                        секунд
+                .header_time-wrap
+                    .header_time.seconds
+                    p.header_text.
+                        секунд
+            h1.header_title.
+                Выиграй<br><span class="header_accent">сертификат</span>  в размере  <span class="header_cost">50 000</span><span class="header_currency">Р</span>
+                <br>на услуги <span class="header_accent">Bvdbeauty</span>
+            form.header_form(action="index.html" method="GET" autocomplete="on")
+                input.header_input(type="text" placeholder="Имя*" required)
+                input.header_input(type="email" placeholder="E-mail*" required)
+                input.header_input(type="phone" placeholder="Тел*" required)
+                button.button.button__header.
+                    Участвовать
+                p.header_agree
+                    input(type="checkbox" name="check" value="agree" id="check" required)
+                    label.header_label(for="check").
+                        Участвовать
+
+

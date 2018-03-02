@@ -1,0 +1,21 @@
+/* LIBRARIES */
+
+
+/* BASE */
+
+@import './base/_reset.scss';
+@import './base/_colors.scss';
+@import './base/_fonts.scss';
+@import './base/_mixins.scss';
+@import './base/_base.scss';
+@import './base/_animations.scss';
+
+/* SECTIONS */
+
+@import './modules/_header';
+@import './modules/_lottery';
+@import './modules/_services';
+@import './modules/_join';
+@import './modules/_review';
+@import './modules/_contact';
+@import './modules/_footer';

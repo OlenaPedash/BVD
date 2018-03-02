@@ -1,0 +1,123 @@
+.header {
+  background: no-repeat url('../img/header_bg.jpg');
+  background-size: cover;
+  background-position: top center;
+  height: 100vh;
+  max-height: 105.5rem;
+  min-width: 30rem;
+  text-align: left;
+  &_container {
+    padding-left: 22%;
+    @include transition(0.4s);
+    @media (max-width: 60rem) {
+      padding-left: 0;
+    }
+  }
+  &_text {
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: .01em;
+    margin-bottom: 1rem;
+    margin: 1rem 0;
+  }
+  &_wrapper {
+    max-width: 74.5rem;
+    width: 100%;
+    @include transition(0.4s);
+    @media (max-width: 60rem) {
+      width: 30rem;
+      margin: 0 auto;
+    }
+  }
+  &_timer {
+    @include display-flex (row,
+            space-between,
+            center);
+  }
+  &_time-wrap {
+    @include display-flex (column,
+            center,
+            center);
+    width: 22%
+  }
+  &_time {
+    background-color:  $timerColor;
+    width: 100%;
+    height: 5.4rem;
+    text-align: center;
+    font-size: 5.5rem;
+    font-weight: 100;
+  }
+  &_title {
+    margin-top: 2.2rem;
+    margin-bottom: 4rem;
+    display: block;
+    @include transition(0.4s);
+    @media (max-width: 89.5rem) {
+      font-size: 2rem;
+      line-height: 2.3rem;
+      text-align: center;
+    }
+  }
+  &_accent {
+    color:  $headerAccent;
+  }
+  &_cost {
+    font-size: 5.4rem;
+    font-weight: 900;
+    white-space: nowrap;
+    @include transition(1s);
+    @media (max-width: 89.5rem) {
+      font-size: 2rem;
+      text-align: center;
+    }
+  }
+  &_currency {
+    text-transform: none;
+  }
+  &_form {
+    background-color: $colorForm;
+    background-image: linear-gradient(135deg, rgba(65,3,58,0.4) 0%,rgba(66,3,59,0.4) 49%,rgba(56,3,50,0.6) 100%);
+    background-blend-mode: multiply;
+    padding: 3.6rem 5rem;
+    min-width: 30rem;
+    @include display-flex (row,
+            space-between,
+            center);
+    flex-wrap: wrap;
+  }
+  &_input {
+    background-color:  #ffffff;
+    width: 30rem;
+    height: 4.2rem;
+    padding-left: 1.5rem;
+    margin-bottom: 2.5rem;
+    @media (max-width: 89.5rem) {
+      width: 100%;
+    }
+  }
+  &_label {
+    color: $lightColor;
+    padding-left: 1.5rem;
+  }
+}
+.logo {
+  @include display-flex (row,
+          center,
+          center);
+  margin-left: -0.7rem;
+  margin-top: -6rem;
+  margin-bottom: 1.5rem;
+  padding-top: 1.4rem;
+  border-radius: 50%;
+  background-color: $colorForm;
+  background-image: linear-gradient(135deg, rgba(65,3,58,0.4) 0%,rgba(66,3,59,0.4) 49%,rgba(56,3,50,0.6) 100%);
+  background-blend-mode: multiply;
+  height: 18.2rem;
+  width: 18.2rem;
+
+}
+.button__header {
+  margin-bottom: 2.5rem;
+}

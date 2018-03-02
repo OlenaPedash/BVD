@@ -1,0 +1,45 @@
+@keyframes bounce {
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+        transform: translateX(-50%) translateY(0);
+    }
+    40% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+    60% {
+        transform: translateX(-50%) translateY(-5px);
+    }
+}
+
+@keyframes anim-input {
+    50% {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 1);
+    }
+    51% {
+        opacity: 0;
+        transform: translate3d(0, -40px, 0) scale3d(0.3, 0.3, 1);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, -40px, 0);
+    }
+}
+
+@keyframes anim-textarea {
+    50% {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 1);
+    }
+    51% {
+        opacity: 0;
+        transform: translate3d(0, -53px, 0) scale3d(0.3, 0.3, 1);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, -53px, 0);
+    }
+}
