@@ -1,26 +1,69 @@
 .services {
   background: $bgColor;
   padding-top: 7rem;
-  min-width: 30rem;
   &_wrapper {
+    padding-top: 5rem;
     @include display-flex (row,
             space-between,
             flex-start);
   }
+  &_h2 {
+    padding-top: 5rem;
+  }
+  &_slider {
+    width: 70%;
+    @media (max-width: 56rem) {
+      width: 100%;
+    }
+  }
+  &_text_align {
+    text-align: left;
+  }
+
   &_item {
-    @include display-flex (row,
-            flex-start,
-            flex-start);
-    max-width: 77.5rem;
-    flex-wrap: wrap;
-    max-height: 51.2rem;
-
+    & img {
+      display: block;
+      width: 100%;
+    }
   }
-  &_text {
 
+  &_buttom {
+    padding: 9rem 0 7rem 17%;
+    width: 63%;
+    text-align: left;
+    @include transition(0.4s);
+    @include display-flex (column,
+            center,
+            flex-end);
+    @media (max-width: 56rem) {
+      @include display-flex (column,
+              center,
+              center);
+      text-align: center;
+      padding: 3rem 0 3rem 0;
+      width: 100%;
+    }
   }
+  &_text-wrapp {
+    align-self: flex-start;
+    @media (max-width: 56rem) {
+      align-self: center;
+    }
+  }
+  &_filters {
+    text-align: left;
+    line-height: 4rem;
+    @media (max-width: 56rem) {
+      display: none;
+    }
+  }
+
 }
-.button_accent {
+
+//UP
+.button-up__serv {
   background-color: $headerAccent;
   color: $lightColor;
+  margin-bottom: 2rem;
 }
+

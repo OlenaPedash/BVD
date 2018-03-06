@@ -1,0 +1,18 @@
+//SLICK-SLIDER
+.slick-prev {
+  left: -7% !important;
+  color: #4e083d;
+  z-index: 22;
+}
+.slick-next {
+  right: -7% !important;
+}
+.services-active:active {
+  list-style: circle;
+  color: $listSryle;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 28px;
+  color: $accent;
+}

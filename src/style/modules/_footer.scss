@@ -1,7 +1,6 @@
 .footer {
   background-color: $mainColor;
   height: 4.2rem;
-  min-width: 30rem;
   @include display-flex (row,
           center,
           center);

@@ -1,5 +1,4 @@
 .lottery {
-  min-width: 30rem;
   margin-top: -17rem;
   padding-bottom: 9.8rem;
   @media (max-width: 89.5rem) {
@@ -36,7 +35,6 @@
     @include transition(0.6s);
     @media (max-width: 655px) {
       width: 80%;
-      min-width: 30rem;
       margin-top: 2%;
     }
   }
@@ -84,22 +82,24 @@
     background-blend-mode: multiply;
     box-shadow: 3px 5px 14.88px 1.12px rgba(0, 0, 1, 0.07);
     color: $lightColor;
-    font-size: 2rem;
+    font-size: 0;
     visibility: hidden;
     width: 0;
     height: 0;
-    @include transition(1s);
+    @include transition(0.4s);
     @include display-flex (row,
             space-around,
             center);
     @media (max-width: 1625px) {
       visibility: visible;
+      font-size: 2rem;
       width: 100%;
       height: auto;
+      margin-bottom: 10rem;
     }
     @media (max-width: 89.5rem) {
-      font-size: 1.5rem;
-      line-height: 2rem;
+      font-size: 2rem;
+      line-height: 2.5rem;
     }
   }
   &_numeric {

@@ -1,10 +1,8 @@
 .header {
-  background: no-repeat url('../img/header_bg.jpg');
+  background: url('../img/header_bg.jpg') top center no-repeat;
   background-size: cover;
-  background-position: top center;
   height: 100vh;
   max-height: 105.5rem;
-  min-width: 30rem;
   text-align: left;
   &_container {
     padding-left: 22%;
@@ -25,10 +23,7 @@
     max-width: 74.5rem;
     width: 100%;
     @include transition(0.4s);
-    @media (max-width: 60rem) {
-      width: 30rem;
-      margin: 0 auto;
-    }
+    margin: 0 auto;
   }
   &_timer {
     @include display-flex (row,
@@ -39,7 +34,7 @@
     @include display-flex (column,
             center,
             center);
-    width: 22%
+    width: 22%;
   }
   &_time {
     background-color:  $timerColor;
@@ -55,8 +50,8 @@
     display: block;
     @include transition(0.4s);
     @media (max-width: 89.5rem) {
-      font-size: 2rem;
-      line-height: 2.3rem;
+      font-size: 2.5rem;
+      line-height: 3rem;
       text-align: center;
     }
   }
@@ -69,7 +64,7 @@
     white-space: nowrap;
     @include transition(1s);
     @media (max-width: 89.5rem) {
-      font-size: 2rem;
+      font-size: 3rem;
       text-align: center;
     }
   }
@@ -81,15 +76,18 @@
     background-image: linear-gradient(135deg, rgba(65,3,58,0.4) 0%,rgba(66,3,59,0.4) 49%,rgba(56,3,50,0.6) 100%);
     background-blend-mode: multiply;
     padding: 3.6rem 5rem;
-    min-width: 30rem;
+    @include transition(1s);
     @include display-flex (row,
             space-between,
             center);
     flex-wrap: wrap;
+    @media (max-width: 35rem) {
+      padding: 1.5rem;
+    }
   }
   &_input {
     background-color:  #ffffff;
-    width: 30rem;
+    width: 48%;
     height: 4.2rem;
     padding-left: 1.5rem;
     margin-bottom: 2.5rem;

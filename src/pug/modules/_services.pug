@@ -1,70 +1,42 @@
-////SERVICES
-//.services
-//    .container
-//        h2.h2.
-//            Наши услуги
-//        p.services_text.
-//            (примеры последних работ)
-//        .services_wrapper
-//            .services_slider
-//                .services_item.color
-//                    img(src='./img/services_first.jpg' alt='work')
-//                    img(src='./img/services_second.jpg' alt='work')
-//                    img(src='./img/services_third.jpg' alt='work')
-//                    img(src='./img/services_fourth.jpg' alt='work')
-//                    img(src='./img/services_fifth.jpg' alt='work')
-//                    img(src='./img/services_sixth.jpg' alt='work')
-//                .services_item.styling
-//                    img(src='./img/services_first.jpg' alt='work')
-//                    img(src='./img/services_second.jpg' alt='work')
-//                    img(src='./img/services_third.jpg' alt='work')
-//                    img(src='./img/services_fourth.jpg' alt='work')
-//                    img(src='./img/services_fifth.jpg' alt='work')
-//                    img(src='./img/services_sixth.jpg' alt='work')
-//                .services_item.styling
-//                    img(src='./img/services_first.jpg' alt='work')
-//                    img(src='./img/services_second.jpg' alt='work')
-//                    img(src='./img/services_third.jpg' alt='work')
-//                    img(src='./img/services_fourth.jpg' alt='work')
-//                    img(src='./img/services_fifth.jpg' alt='work')
-//                    img(src='./img/services_sixth.jpg' alt='work')
-//                .services_item.haircut
-//                    img(src='./img/services_first.jpg' alt='work')
-//                    img(src='./img/services_second.jpg' alt='work')
-//                    img(src='./img/services_third.jpg' alt='work')
-//                    img(src='./img/services_fourth.jpg' alt='work')
-//                    img(src='./img/services_fifth.jpg' alt='work')
-//                    img(src='./img/services_sixth.jpg' alt='work')
-//                .services_item.manicure
-//                    img(src='./img/services_first.jpg' alt='work')
-//                    img(src='./img/services_second.jpg' alt='work')
-//                    img(src='./img/services_third.jpg' alt='work')
-//                    img(src='./img/services_fourth.jpg' alt='work')
-//                    img(src='./img/services_fifth.jpg' alt='work')
-//                    img(src='./img/services_sixth.jpg' alt='work')
-//                .services_item.makeup
-//                    img(src='./img/services_first.jpg' alt='work')
-//                    img(src='./img/services_second.jpg' alt='work')
-//                    img(src='./img/services_third.jpg' alt='work')
-//                    img(src='./img/services_fourth.jpg' alt='work')
-//                    img(src='./img/services_fifth.jpg' alt='work')
-//                    img(src='./img/services_sixth.jpg' alt='work')
-//                .services_item.eyebrows
-//                    img(src='./img/services_first.jpg' alt='work')
-//                    img(src='./img/services_second.jpg' alt='work')
-//                    img(src='./img/services_third.jpg' alt='work')
-//                    img(src='./img/services_fourth.jpg' alt='work')
-//                    img(src='./img/services_fifth.jpg' alt='work')
-//                    img(src='./img/services_sixth.jpg' alt='work')
-//                button.button.button_accent.
-//                    Участвовать
-//                p.services_text.
-//                    *полный список процедур будет выслан вам на почту после заполнения формы
-//            ul.services_filters
-//                li.services_filter.active-filter.services_text(data-filter=".color") Колористика
-//                li.services_filter.services_text(data-filter=".styling") Укладки
-//                li.services_filter.services_text(data-filter=".haircut") Стрижки
-//                li.services_filter.services_text(data-filter=".treatment") Лечение
-//                li.services_filter.services_text(data-filter="manicure") Маникюр и педикюр
-//                li.services_filter.services_text(data-filter=".makeup") Макияж
-//                li.services_filter.services_text(data-filter=".eyebrows") Брови
+//SERVICES
+.services
+    .container
+        h2.h2.services_h2.
+            Наши услуги
+        p.services_text.
+            (примеры последних работ)
+        .services_wrapper
+            #slider.services_slider
+                .services_item.color
+                    img(src='./img/slide1.jpg' alt='work')
+                .services_item.styling.color
+                    img(src='./img/slide1.jpg' alt='work')
+                .services_item.haircut
+                    img(src='./img/slide1.jpg' alt='work')
+                .services_item.haircut
+                    img(src='./img/slide1.jpg' alt='work')
+                .services_item.treatment
+                    img(src='./img/slide1.jpg' alt='work')
+                .services_item.treatment
+                    img(src='./img/slide1.jpg' alt='work')
+            ul.services_filters
+                li.li.active-filter.services-active(data-filter="color")
+                    span.services_text Колористика
+                li.services_filter.services_text.services-active(data-filter="styling")
+                    span.services_text Укладки
+                li.services_filter.services_text.services-active(data-filter="haircut")
+                    span.services_text Стрижки
+                li.services_filter.services_text.services-active(data-filter="treatment")
+                    span.services_text Лечение
+                li.services_filter.services_text.services-active(data-filter="manicure")
+                    span.services_text Маникюр и педикюр
+                li.services_filter.services_text.services-active(data-filter="makeup")
+                    span.services_text Макияж
+                li.services_filter.services_text.services-active(data-filter="eyebrows")
+                    span.services_text Брови
+.services_buttom
+    a(href='#header').button-up.button-up__serv.
+        Участвуй
+    .services_text-wrapp
+        p.services_text.
+            *полный список процедур будет выслан вам на почту после заполнения формы
